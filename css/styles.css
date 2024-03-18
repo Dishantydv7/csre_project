@@ -5033,3 +5033,31 @@ td:last-child {
 	margin-top: 0;
 	margin-bottom: var(--vspace-1_5);
 }
+
+.ingrass {
+	display: flex;
+	flex-direction: row;
+	margin: 2px;
+
+}
+
+.div1 {
+	width: 34%;
+	margin: 2%;
+	margin-left: 4%;
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: larger;
+
+}
+
+.div2 {
+	width: 66%;
+	margin: 2%;
+	margin-right: 10%;
+}
+
+.whiteline {
+	width: 100%;
+	border: solid white .5px;
+}
