@@ -3583,8 +3583,8 @@ td:last-child {
 	--content-padding-bottom: 5.8rem;
 	--content-min-height: calc(var(--vspace-1) * 27);
 	z-index: 2;
-	background-color: var(--color-2-dark);
-	background: linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
+	background-color: black;
+		/* background: linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%); */
 	width: 100%;
 	height: max(var(--content-min-height), 100vh);
 	overflow: hidden;
@@ -4856,21 +4856,23 @@ td:last-child {
 	letter-spacing: -0.012em;
 	line-height: 1.0606;
 	padding-top: 20px;
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('your-image-url.jpg');
+	background-image: linear-gradient(to right, #3029a0, #ffff);
+		/* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('your-image-url.jpg'); */
 	background-size: cover;
 	/* Adjust as needed */
-	font-family: Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif
 	/* Choose a font family that suits your design */
-	background-color: var(--color-2-dark);
+	/* background-color: var(--color-2-dark); */
 	/* Change to the desired background color */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
+	
 
 	.title_dishant {
 		font-size: var(--text-display-2);
-		background-image: linear-gradient(to right, var(--color-2-dark), var(--color-2-light));
+		background-image: linear-gradient(to bottom, #31a4c3, #ffff);
 		/* Adjust colors as needed */
 		/* ... other styles ... */
 	}
@@ -4890,22 +4892,19 @@ td:last-child {
 }
 
 .welcome_message_content {
-margin-top: 3%;
+	padding-top: 3%;
 	padding: 10px;
-	background-color: var(--color-2-dark);
-	color: whitesmoke;
+	/* background: linear-gradient(to right, #31a4c3, #ffff); */
 }
 
 .welcome_message_content {
 	padding: 10px;
-	background-color: var(--color-2-dark);
-	color: whitesmoke;
-	margin-left: 4%
-		/* Adjust as needed */
+	color: black;
+		padding-left: 4%
 }
 
 #dishant {
-	background-color: var(--color-2-dark);
+	background-color: white;
 }
 
 .attention-getter_dishant {
@@ -5041,6 +5040,28 @@ margin-top: 3%;
 	flex-direction: row;
 	margin: 2px;
 
+}
+
+ul li ul.dropdown {
+	width: auto;
+	background-color: white;
+	position: absolute;
+	z-index: 999;
+	visibility: hidden;
+	/* Change display to visibility */
+	opacity: 0;
+	/* Add opacity */
+	transition: visibility 2s, opacity 5s linear;
+	/* Add transition */
+}
+
+ul li:hover ul.dropdown {
+	visibility: visible;
+	/* Change display to visibility */
+	opacity: 1;
+	/* Add opacity */
+	transition-delay: 1s;
+	/* Add delay */
 }
 ul li ul.dropdown li {
 	display: block;
@@ -5300,4 +5321,152 @@ ul li:before {
 	border: solid 2.8px black;
 	margin-top: 3%;
 
+}
+.Sponsor_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4vw;
+	font-weight: 800;
+	padding: 3%;
+}
+
+.Sponsor_title_content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+	font-weight: 400;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+.Sponsor_title_content_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5vw;
+	padding-left: 1%;
+}
+
+
+.spons_ul_li {
+
+	/* This adds bullet points */
+	font-size: 1.3vw;
+	font-weight: 400;
+	padding-left: 2%;
+	padding-top: 0.4%;
+	/* padding-top: ; */
+	/* margin-bottom: 1em; */
+	/* border-radius: 5px; */
+	/* padding: 1em; */
+}
+
+.spons_content {
+	display: flex;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+.spons_ul {
+	font-weight: 500;
+	font-size: 1.7vw;
+
+}
+
+.star {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.sposorMoneytitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4vw;
+	font-weight: 800;
+	padding: 3%;
+}
+
+ul.dropdown_dishant li a:hover {
+	color: black;
+}
+
+ul li ul.dropdown_dishant {
+	width: auto;
+	background-color: white;
+	position: absolute;
+	z-index: 999;
+	visibility: hidden;
+	/* Change display to visibility */
+	opacity: 1;
+	/* Add opacity */
+	transition: visibility 0.1s linear;
+	/* Add transition */
+	white-space: nowrap;
+	border-radius: 6%;
+}
+
+ul li:hover ul.dropdown_dishant {
+	visibility: visible;
+	/* Change display to visibility */
+	opacity: 1;
+	/* Add opacity */
+	transition-delay: 0s;
+	/* Add delay */
+}
+
+ul li:hover ul.dropdown_dishant:hover {
+	visibility: visible;
+	/* Change display to visibility */
+
+}
+
+ul li ul.dropdown li a {
+	color: black;
+}
+
+
+ul li a:hover {
+	font-size: larger;
+
+}
+
+ul.dropdown_dishant li a {
+	color: black;
+}
+
+ul li a:hover ul.dropdown_dishant {
+	visibility: visible;
+	/* Change display to block */
+	opacity: 1;
+
+}
+
+ul {
+	list-style: none;
+
+}
+
+ul li {
+	display: block;
+	position: relative;
+	color: #000000;
+}
+
+ul li a {
+
+	color: black;
+
+}
+
+
+ul li:hover ul.dropdown_dishant {
+	visibility: visible;
+	/* Change display to block */
+	opacity: 1;
 }
